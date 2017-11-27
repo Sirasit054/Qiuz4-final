@@ -4,7 +4,7 @@ var cors = require('cors');
 var bodyParser = require('body-parser');
 var posts = require('./post.js');
 var path = require('path');
-
+moment.locale('th');
 
 // POINT 1. Enable CORS
 app.use(cors());
