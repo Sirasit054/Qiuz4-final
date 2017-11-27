@@ -11,6 +11,7 @@ function getAllPosts(req, res) {
     var query = {};
 
     //POINT 4. Set sort the query by recently create_date
+  
     var sort = {create_date: -1}; 
     db.collection("posts").find(query).sort(sort).toArray(function (err, result) {
         if (err) throw err;
