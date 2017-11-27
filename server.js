@@ -16,7 +16,7 @@ app.use(express.static('frontend'));
 // POINT 2. Set a static file for “frontend” folder
 
 
-var port = process.env.PORT || 8081;        // set our port
+var port = process.env.PORT || 8080;        // set our port
 
 var router = express.Router();              // get an instance of the express Router
 
