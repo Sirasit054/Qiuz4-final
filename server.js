@@ -24,7 +24,7 @@ var router = express.Router();              // get an instance of the express Ro
 // POINT 3. Set API routing to functions in post.js
 
 router.get('/posts',posts.getAllPosts);
-router.get('/posts/byusers',posts.getPostsByUser);
+router.get('/posts/byuser',posts.getPostsByUser);
 router.get('/posts/newpost',posts.insertNewPosts);
 // REGISTER OUR ROUTES -------------------------------
 // all of our routes will be prefixed with /api
