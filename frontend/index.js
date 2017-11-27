@@ -31,7 +31,7 @@ function loadAllPost() {
 function loadPostByUser() {
         $('#posts').empty();
         //Get all posts
-        var url = '/api/posts/pkorawit';
+        var url = '/api/posts/byuser';
         axios.get(url)
             .then(function (response) {
                 console.log(response);

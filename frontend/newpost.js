@@ -18,7 +18,7 @@ function createNewPost(){
 
     console.log(newpost);
 
-    var url = '/api/posts';
+    var url = '/api/posts/newpost';
     axios.post(url, newpost)
       .then(function (response) {
         console.log(response);
