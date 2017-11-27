@@ -22,12 +22,11 @@ function getAllPosts(req, res) {
 
 function getPostsByUser(req, res) {
     // Additional 1.
-    var query = {
-        username: req.query.username
-    };
-    console.log(query);
-    db.collection("posts").find(query).toArray(function (err, result) {
-        if (err) throw err;
+ 
+    var query = {username : "pkorawit"};
+    var sort = {create_date: -1};
+    db.collection("posts").find(query).sort(sort).toArray(function (err, result) {
+    if (err) throw err;
         res.json(result);
     });
 }

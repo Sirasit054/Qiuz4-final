@@ -25,7 +25,7 @@ var router = express.Router();              // get an instance of the express Ro
 
 router.get('/posts',posts.getAllPosts);
 router.get('/posts/byuser',posts.getPostsByUser);
-router.get('/posts/newpost',posts.insertNewPosts);
+router.get('/posts',posts.insertNewPosts);
 // REGISTER OUR ROUTES -------------------------------
 // all of our routes will be prefixed with /api
 app.use('/api', cors(), router);
